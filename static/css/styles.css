@@ -1,0 +1,31 @@
+h1{
+    color: #27c99a;
+    font-family: "Playfair Display", serif;
+}
+
+body{
+    background-image: url('images/compute-ea4c57a4.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+p{
+    background: linear-gradient(to left, #55a4c5, whitesmoke) no-repeat fixed;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.p2{
+    color: white;
+    border-top: #55a4c5;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    border-radius: 40px;
+    top: 0;
+
+
+}
