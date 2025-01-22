@@ -1,0 +1,33 @@
+{% load static %}
+
+<nav class="navbar">
+    <ul>
+        <li>
+            <a href="#">Home</a>
+            <i class='bx bx-home' ></i>
+        </li>
+        <li>
+            <a href="#">Profile</a>
+            <i class='bx bx-user'></i>
+        </li>
+        <li>
+            <a href="#">Task</a>
+            <i class='bx bx-task' ></i>
+        </li>
+        <li>
+            <a href="#">About</a>
+            <i class='bx bx-info-square' ></i>
+        </li>
+        {% if not request.user.is_authenticated %}
+            <li>
+                <a href="#">Login</a>
+                <i class='bx bx-lock'></i>
+            </li>
+        {% else %}
+            <li>
+                <a href="#">Logout</a>
+                <i class='bx bxs-left-arrow-square'></i>
+            </li>
+        {% endif %}
+    </ul>
+</nav>
