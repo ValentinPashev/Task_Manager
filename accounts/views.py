@@ -1,5 +1,6 @@
+from django.contrib.auth.views import RedirectURLMixin
 from django.urls import reverse_lazy
-from django.views.generic import CreateView
+from django.views.generic import CreateView, FormView
 from accounts.forms import CustomCreationForm
 
 
@@ -8,3 +9,4 @@ class UserRegistrationView(CreateView):
     form_class = CustomCreationForm
     template_name = 'registration/register.html'
     success_url = reverse_lazy('index')
+

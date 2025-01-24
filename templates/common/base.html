@@ -1,4 +1,5 @@
 {% load static %}
+{% load user_info %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,10 +16,15 @@
 
 </head>
 
+<div>
+    {% user_info request.user %}
+</div>
+
+
 <body>
-    <p class="p2">Testing</p>
-        {% include 'common/nav.html' %}
-            <h1>Hello World</h1>
-                {% block content %}
-                {% endblock %}
+<p>Task Manager App</p>
+{% include 'common/nav.html' %}
+<h1>Hello World</h1>
+{% block content %}
+{% endblock %}
 </body>
